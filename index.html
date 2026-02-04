@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Awareness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --page-bg: #ffffff;
+            --primary: #3f51b5;
+            --text: #1f1f1f;
+            --muted: #5a5a5a;
+        }
+
+        html, body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--page-bg);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: var(--text);
+        }
+
+        .header {
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 28px 20px 40px;
+        }
+
+        .content-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 32px 40px 36px;
+            width: 100%;
+            max-width: 920px;
+            line-height: 1.55;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0 10px;
+        }
+
+        .lead {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .paragraph {
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        .list {
+            margin: 8px 0 16px 18px;
+        }
+
+        .list li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .warning {
+            margin: 14px 0 18px;
+            padding: 12px 14px;
+            background: #f6f7ff;
+            border-left: 4px solid var(--primary);
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">Security Awareness</div>
+        <div></div>
+    </div>
+
+    <main class="main-content">
+        <div class="content-card">
+            <div class="lead">Уважаемый коллега, Поздравляем Вы просимулированы на фишинг</div>
+            <p class="paragraph">
+                Вы только что приняли участие в плановой симуляции фишинговой атаки, проводимой в рамках программы
+                повышения осведомлённости по информационной безопасности.
+            </p>
+            <p class="paragraph muted">
+                Цель данной симуляции — обучение и профилактика, а не контроль или наказание.
+            </p>
+
+            <div class="section-title">Что произошло</div>
+            <p class="paragraph">В ходе симуляции:</p>
+            <ul class="list">
+                <li>Вам было отправлено электронное письмо, имитирующее корпоративное от SupportIT</li>
+                <li>В письме содержалась ссылка на похожий внутренний ресурс смены пароля</li>
+                <li>Вы перешли по ссылке и ввели данные на странице</li>
+            </ul>
+            <div class="warning">
+                ⚠️ Это поведение характерно для реальных фишинговых атак и может привести к компрометации учётной
+                записи в случае настоящей угрозы.
+            </div>
+
+            <div class="section-title">Важно знать</div>
+            <ul class="list">
+                <li>🔒 Введённые Вами данные не сохранялись и не использовались</li>
+                <li>❌ Пароли не проверялись и не передавались третьим лицам</li>
+                <li>📊 Фиксировался только сам факт взаимодействия (переход / отправка формы)</li>
+            </ul>
+
+            <div class="section-title">Признаки фишинга, на которые стоит обращать внимание</div>
+            <p class="paragraph">В данном сценарии использовались типичные признаки фишинговых писем:</p>
+            <ul class="list">
+                <li>домены схожие с настоящими</li>
+                <li>ощущение срочности («в течение 48 часов»)</li>
+                <li>просьба ввести учётные данные по ссылке</li>
+                <li>переход на внешний сайт</li>
+                <li>визуальное сходство с внутренними сервисами</li>
+            </ul>
+            <p class="paragraph muted">
+                Даже если письмо выглядит правдоподобно — всегда проверяйте источник и адрес ссылки.
+            </p>
+
+            <div class="section-title">На будущее</div>
+            <p class="paragraph">Рекомендуется:</p>
+            <ul class="list">
+                <li>🔍 внимательно проверять адрес отправителя</li>
+                <li>🌐 наводить курсор на ссылку перед переходом</li>
+                <li>🔐 никогда не вводить пароли по ссылкам из писем</li>
+                <li>🚩 использовать функцию «Сообщить о фишинге» в почтовом клиенте</li>
+            </ul>
+
+            <p class="paragraph">
+                Полная статистика фишинговой компании в целом по группе
+                <a class="link" href="security_awareness_photo1.html">здесь</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>
