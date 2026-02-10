@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Awareness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --page-bg: #ffffff;
+            --primary: #3f51b5;
+            --text: #1f1f1f;
+            --muted: #5a5a5a;
+        }
+
+        html, body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--page-bg);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: var(--text);
+        }
+
+        .header {
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 28px 20px 40px;
+        }
+
+        .content-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 32px 40px 36px;
+            width: 100%;
+            max-width: 920px;
+            line-height: 1.55;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0 10px;
+        }
+
+        .lead {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .paragraph {
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        .list {
+            margin: 8px 0 16px 18px;
+        }
+
+        .list li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .warning {
+            margin: 14px 0 18px;
+            padding: 12px 14px;
+            background: #f6f7ff;
+            border-left: 4px solid var(--primary);
+            border-radius: 6px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">Security Awareness</div>
+        <div></div>
+    </div>
+
+    <main class="main-content">
+        <div class="content-card">
+            <div class="lead">Dear colleague, congratulations, you were simulated for phishing</div>
+            <p class="paragraph">
+                You have just taken part in a planned phishing simulation conducted as part of the information security
+                awareness program.
+            </p>
+            <p class="paragraph muted">
+                The purpose of this simulation is education and prevention, not control or punishment.
+            </p>
+
+            <div class="section-title">What happened</div>
+            <p class="paragraph">During the simulation:</p>
+            <ul class="list">
+                <li>You received an email imitating a corporate message from SupportIT</li>
+                <li>The email contained a link to a look‑alike internal password change resource</li>
+                <li>You followed the link and entered data on the page</li>
+            </ul>
+            <div class="warning">
+                ⚠️ This behavior is typical for real phishing attacks and can lead to account compromise in case of a
+                real threat.
+            </div>
+
+            <div class="section-title">Important to know</div>
+            <ul class="list">
+                <li>🔒 The data you entered was not saved or used</li>
+                <li>❌ Passwords were not checked or shared with third parties</li>
+                <li>📊 Only the fact of interaction was recorded (visit / form submission)</li>
+            </ul>
+
+            <div class="section-title">Phishing signs to watch for</div>
+            <p class="paragraph">In this scenario, typical phishing signs were used:</p>
+            <ul class="list">
+                <li>domains similar to the real ones</li>
+                <li>a sense of urgency (“within 48 hours”)</li>
+                <li>a request to enter credentials via a link</li>
+                <li>redirecting to an external site</li>
+                <li>visual similarity to internal services</li>
+            </ul>
+            <p class="paragraph muted">
+                Even if an email looks credible, always verify the sender and the link address.
+            </p>
+
+            <div class="section-title">Going forward</div>
+            <p class="paragraph">We recommend:</p>
+            <ul class="list">
+                <li>🔍 carefully checking the sender address</li>
+                <li>🌐 hovering over links before clicking</li>
+                <li>🔐 never entering passwords from email links</li>
+                <li>🚩 using the “Report phishing” function in the email client</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
